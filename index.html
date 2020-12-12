@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>QUIZ</h1>
+
+    <form id="quiz" name="quiz">
+        <!-- question 1 -->
+      <p>1-What is the capital of Turkey?</p>
+  
+      <input type="radio" id="radio" name="answer1" value="İstanbul" />
+      <label for="İstanbul">İstanbul</label><br />
+
+      <input type="radio" id="radio" name="answer1" value="Ankara" />
+      <label for="Ankara">Ankara</label><br />
+  
+      <input type="radio" id="radio" name="answer1" value="İzmir" />
+      <label for="İzmir">İzmir</label><br />
+
+      <!-- question 2 -->
+
+      <p>2-What is the capital of Italy?</p>
+
+      <input type="radio" id="radio" name="answer2" value="Milano" />
+      <label for="Milano">Milano</label><br />
+
+      <input type="radio" id="radio" name="answer2" value="Venedik" />
+      <label for="Venedik">Venedik</label><br />
+  
+      <input type="radio" id="radio" name="answer2" value="Roma" />
+      <label for="Roma">Roma</label><br />
+
+      <!-- question 3 -->
+      <p>2-What is the capital of Denmark?</p>
+
+      <input type="radio" id="radio" name="answer3" value="Kopenhag" />
+      <label for="Kopenhag">Kopenhag</label><br />
+
+      <input type="radio" id="radio" name="answer3" value="Odense" />
+      <label for="Odense">Odense</label><br />
+  
+      <input type="radio" id="radio" name="answer3" value="Aarhus" />
+      <label for="Aarhus">Aarhus</label><br />
+
+      <!-- button -->
+      <input id="button" type="button" value="Finish" onclick="check();">
+
+    </form>
+
+    <div id="after_button">
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <img id="gifs">
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
